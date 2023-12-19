@@ -111,9 +111,13 @@ impl Point {
   }
 
   pub fn squared_distance(&self, p: Point) -> usize {
+    self.abs_diff(p).squared_norm()
+  }
+
+  pub fn abs_diff(&self, p: Point) -> Point {
     let x = usize_diff(self.x, p.x);
     let y = usize_diff(self.y, p.y);
-    Point::new(x, y).squared_norm()
+    Point::new(x, y)
   }
 
   pub fn get_next(&self, d: Direction, container: &Point) -> Option<Point> {

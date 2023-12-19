@@ -1,5 +1,13 @@
+mod eight;
+mod eleven;
+mod five;
+mod four;
+mod nine;
 mod one;
 mod point;
+mod seven;
+mod six;
+mod ten;
 mod three;
 mod two;
 
@@ -16,6 +24,14 @@ fn main() {
     "1" => crate::one::solve(),
     "2" => crate::two::solve(),
     "3" => crate::three::solve(),
+    "4" => crate::four::solve(),
+    "5" => crate::five::solve(),
+    "6" => crate::six::solve(),
+    "7" => crate::seven::solve(),
+    "8" => crate::eight::solve(),
+    "9" => crate::nine::solve(),
+    "10" => crate::ten::solve(),
+    "11" => crate::eleven::solve(),
     _ => unreachable!(),
   }
 }
